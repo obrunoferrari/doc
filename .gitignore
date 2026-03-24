@@ -1,0 +1,102 @@
+# ============================================================
+# .gitignore — Spring Boot
+# ============================================================
+
+# ----- Build output -----
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Gradle (caso use Gradle)
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ----- IDEs -----
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ----- Spring Boot -----
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Spring Boot devtools restart trigger
+.reloadtrigger
+
+# ----- Configurações sensíveis -----
+# IMPORTANTE: nunca versionar segredos!
+application-local.properties
+application-local.yml
+application-prod.properties
+application-prod.yml
+application-secret.properties
+application-secret.yml
+*.env
+.env
+.env.*
+secrets/
+
+# ----- Logs -----
+logs/
+*.log
+*.log.*
+spring.log
+
+# ----- Sistema operacional -----
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ----- Docker (opcional) -----
+# Descomente se não quiser versionar overrides locais
+# docker-compose.override.yml
+
+# ----- Misc -----
+*.class
+*.swp
+*.swo
+HELP.md
